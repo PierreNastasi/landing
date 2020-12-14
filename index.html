@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Lamborghini</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/07efa7ffd1.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<header class="header">
+			<nav>
+
+				<div class="hamburg">
+				<i class="fas fa-bars fa-2x"></i>
+				</div>
+
+				<div class="logo">
+					<img src="images/logo.png" alt="Logo" height="50" width="50">
+				</div>
+
+				<div class="menu">
+					<ul>
+						<li> <a href="#">Modèles</a></li>
+						<li> <a href="#">Service Client</a></li>
+						<li> <a href="#">Motorsport</a></li>
+						<li> <a href="#">Véhicules d'occasion</a></li>
+
+					</ul>
+
+				</div>
+
+			</nav>
+
+		</header>
+
+		<div class="banner">
+			<div class="container">
+			<h1>Lamborghini</h1>
+			<h2>Aventador SVJ</h2>
+			<a href="#droit" class="btn-red">Droit d'achat</a>
+
+			</div>	
+			
+		</div>
+
+		<div class="container">
+
+			<h2>Modèles</h2>
+			<div class="card">
+				
+				<img src="images/aventador-card.png" alt="Aventador">
+				<a href="#" class="btn-black"> Configuration</a>
+	
+			</div>
+			
+			<div class="card">
+				
+				<img src="images/huracan-card.png" alt="Huracan">
+				<a href="#" class="btn-black"> Configuration</a>
+	
+			</div>
+			
+			<div class="card">
+				
+				<img src="images/urus-card.png" alt="Urus">
+				<a href="#" class="btn-black"> Configuration</a>
+	
+			</div>
+			
+
+		</div>
+
+
+<div id="droit">
+	<div class="typeform-widget" data-url="https://form.typeform.com/to/byHyKekk?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+</div>
+
+
+			<script>
+
+				$(document).ready(function(){
+					$(".hamburg").on("click", function(){
+						$("nav ul").toggleClass("menu"); 
+					});
+				});
+
+
+				$(window).on("scroll", function(){
+					if ($(window).scrollTop()){
+						$('nav').addClass('scroll');
+
+				}
+						else {
+						$('nav').removeClass('scroll')
+						}
+
+					
+				})
+
+			
+			</script>
+
+	</body>
+
+
+</html>	
